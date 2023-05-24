@@ -1,0 +1,38 @@
+{
+  "name": "learn-graphql-using-apolo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "tsc",
+    "start": "npm run compile && node ./dist/index.js",
+    "watch": "tsc -w",
+    "server": "nodemon dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/longcuteanme/learn-graphql-using-apolo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/longcuteanme/learn-graphql-using-apolo/issues"
+  },
+  "homepage": "https://github.com/longcuteanme/learn-graphql-using-apolo#readme",
+  "type": "module",
+  "dependencies": {
+    "@apollo/server": "^4.7.1",
+    "@types/cors": "^2.8.13",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "graphql": "^16.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.2.3",
+    "nodemon": "^2.0.22",
+    "tsconfig.json": "^1.0.11",
+    "typescript": "^5.0.4"
+  }
+}
