@@ -1,18 +1,38 @@
 const books = [
   {
+    id: 1,
     title: "The Awakening",
-    author: "Kate Chopin",
+    author: {
+      id: 1,
+    },
   },
   {
+    id: 2,
     title: "City of Glass",
-    author: "Paul Auster",
+    author: {
+      id: 2,
+    },
+  },
+];
+
+const authors = [
+  {
+    id: 1,
+    name: "abc",
+    books: [],
+  },
+  {
+    id: 2,
+    name: "def",
+    books: [],
   },
 ];
 
 const resolvers = {
   Query: {
     books: () => books,
+    author: () => authors,
   },
 };
 
-export default resolvers
+module.exports = resolvers;
